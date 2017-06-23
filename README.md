@@ -1,21 +1,39 @@
 
-### step 1 download
+### step 1 Download
 git clone git@github.com:028820/java-checkstyle.git ~/Documents/checkstyle
 
-### step 2 
-cd YOUR\_GIT\_PROJECT
+### step 2 Java Project
 
-### step 3 install git pre-commit hook
+mkdir java\_example && cd java\_example && git init
+
+touch Test.java
+
+```java
+public class Test{
+	public static final int aaa = 2;
+
+	private int b;
+
+	private int c;
+}
+```
+
+### step 3 Install git pre-commit hook
 ~/Documents/checkstyle/init.sh
 
-### step 4 scan whole project (Opntional)
-~/Documents/checkstyle/scan.sh
+### step 4 Test Commit
+git add *
 
+git commit -m 'Test git-hook'
 
-### Others
-render checkstyle_report.xml by XSLT
+### step 5 Report
 
-Open checkstyle_report.xml in Safari
+Render checkstyle_report.xml by XSLT.
+
+Open checkstyle_report.xml in Safari (Recommend).
+![](https://028820.github.io/img/checkstyle/checkstyle_error.png)
+
 
 Chrome (XSLT doesn't work) see: 
-https://stackoverflow.com/questions/2981524/how-can-i-make-xslt-work-in-chrome
+https://stackoverflow.com/questions/2981524/how-can-i-make-xslt-work-in-chrome.
+
