@@ -1,11 +1,14 @@
-#/bin/bash
+#!/bin/bash
 
 CONFIG_PRE_COMMIT="./.git/hooks/pre-commit"
-CONFIGF_PRE_COMMIT_BACKUP="./.git/hooks/pre-commit.backup"
+
+ts=`date "+%Y%m%d.%H%M%S"`
+
+CONFIGF_PRE_COMMIT_BACKUP="./.git/hooks/pre-commit.$ts.backup"
 
 if [ -f "$CONFIG_PRE_COMMIT" ] 
 then
-    echo "backup exists pre-commit to $CONFIGF_PRE_COMMIT_BACKUP."
+    echo "backup exists pre-commit to $CONFIGF_PRE_COMMIT_BACKUP"
     mv $CONFIG_PRE_COMMIT $CONFIGF_PRE_COMMIT_BACKUP 
 fi
 
