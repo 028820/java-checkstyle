@@ -18,7 +18,7 @@ public class Test{
 }
 ```
 
-### Step 3 Install git pre-commit hook
+### Step 3 Install git pre-commit hook for java_example
 ~/Documents/java-checkstyle/init.sh
 
 ### Step 4 Test Commit
