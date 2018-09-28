@@ -10,6 +10,6 @@ then
 fi
 
 echo "copy pre-commit to git hook"
-cp ~/Documents/checkstyle/pre-commit ./.git/hooks/pre-commit
+cp ~/Documents/java-checkstyle/pre-commit ./.git/hooks/pre-commit
 
 echo "java checkstyle installed!"

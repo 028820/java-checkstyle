@@ -1,6 +1,6 @@
 
 ### step 1 Download
-git clone git@github.com:028820/java-checkstyle.git ~/Documents/checkstyle
+git clone git@github.com:028820/java-checkstyle.git ~/Documents/java-checkstyle
 
 ### step 2 Java Project
 
@@ -19,7 +19,7 @@ public class Test{
 ```
 
 ### step 3 Install git pre-commit hook
-~/Documents/checkstyle/init.sh
+~/Documents/java-checkstyle/init.sh
 
 ### step 4 Test Commit
 git add *
@@ -31,6 +31,11 @@ git commit -m 'Test git-hook'
 Render checkstyle_report.xml by XSLT.
 
 Open checkstyle_report.xml in Safari (Recommend).
+
+#### Safari Requires
+1. Develop -> Disable Local File Restrictions (MUST CHECK)
+2. Make sure the "~/Documents/java-checkstyle/checkstyle_report.xml" Open With Safari (Default), it's for convenience. git-hook will be auto-open the report if your code with checkstyle problem
+
 ![](https://028820.github.io/img/checkstyle/checkstyle_error.png)
 
 
