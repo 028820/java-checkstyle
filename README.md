@@ -1,8 +1,8 @@
 
-### step 1 Download
+### Step 1 Download
 git clone git@github.com:028820/java-checkstyle.git ~/Documents/java-checkstyle
 
-### step 2 Java Project
+### Step 2 Java Project
 
 mkdir java\_example && cd java\_example && git init
 
@@ -18,15 +18,15 @@ public class Test{
 }
 ```
 
-### step 3 Install git pre-commit hook
+### Step 3 Install git pre-commit hook
 ~/Documents/java-checkstyle/init.sh
 
-### step 4 Test Commit
+### Step 4 Test Commit
 git add *
 
 git commit -m 'Test git-hook'
 
-### step 5 Report
+### Step 5 Report
 
 Render checkstyle_report.xml by XSLT.
 
