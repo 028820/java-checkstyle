@@ -1,6 +1,6 @@
 
 ### Step 1 Download
-git clone git@github.com:028820/java-checkstyle.git ~/Documents/java-checkstyle
+git clone https://github.com/028820/java-checkstyle.git ~/Documents/java-checkstyle
 
 ### Step 2 Java Project
 
