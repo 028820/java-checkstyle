@@ -2,3 +2,5 @@ checkstyle_errors.xml
 checkstyle_report.xml
 .DS_Store
 **/.DS_Store
+.idea
+.idea/

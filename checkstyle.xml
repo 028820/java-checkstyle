@@ -26,7 +26,10 @@ Checkstyle configurartion that checks the Google coding conventions (https://goo
             <property name="processJavadoc" value="true"/>
         </module>
         <!-- 注释检查 -->
-        <module name="SummaryJavadocCheck"/>
+        <module name="SummaryJavadocCheck">
+            <!-- 结尾不需要.  default .-->
+            <property name="period" value=""/>
+        </module>
         <!-- 作者名字不能为 user或admin -->
         <module name="JavadocType">
             <property name="allowUnknownTags" value="true"/>
@@ -54,7 +57,8 @@ Checkstyle configurartion that checks the Google coding conventions (https://goo
         <!-- 重载方法需要不可分割 -->
         <module name="OverloadMethodsDeclarationOrder"/>
         <!-- 方法注释 -->
-        <module name="JavadocMethod" />
+        <!-- <module name="JavadocMethod"/> -->
+        
         <!-- 方法名字校验 -->
         <module name="MethodName">
             <property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9_]*$"/>
@@ -67,9 +71,9 @@ Checkstyle configurartion that checks the Google coding conventions (https://goo
         </module>
         <!-- 方法的参数个数不超过5个。 并且不对构造方法进行检查-->
         <module name="ParameterNumber">
-            <property name="max" value="5" />
+            <property name="max" value="5"/>
             <property name="ignoreOverriddenMethods" value="true"/>
-            <property name="tokens" value="METHOD_DEF" />
+            <property name="tokens" value="METHOD_DEF"/>
         </module>
 
         <!-- 局部变量名字 -->
@@ -88,7 +92,7 @@ Checkstyle configurartion that checks the Google coding conventions (https://goo
 
         <!-- Code Style Start -->
         <!-- 禁止 MagicNumber  -->
-        <module name="MagicNumber" />
+        <module name="MagicNumber"/>
         <!-- 代码换行校验. 如: package 与 import 需要换行.  -->
         <module name="EmptyLineSeparator">
             <property name="allowMultipleEmptyLines" value="false"/>
@@ -100,7 +104,7 @@ Checkstyle configurartion that checks the Google coding conventions (https://goo
         </module>
 
         <!-- 在类型转换时，不允许左圆括号右边有空格，也不允许与右圆括号左边有空格 -->
-        <module name="TypecastParenPad" />
+        <module name="TypecastParenPad"/>
         <!-- 圆括号前后不允许多余空格 如: if ( a == b ) 、 method( int b )-->
         <module name="ParenPad"/>
 
@@ -197,14 +201,19 @@ Checkstyle configurartion that checks the Google coding conventions (https://goo
             <message key="ws.notPreceded" value="GenericWhitespace ''{0}'' is not preceded with whitespace."/>
         </module>
 
+        <!--Java JDK 8 lambada Google Style冲突 -->
+        <!--
         <module name="Indentation">
             <property name="caseIndent" value="2"/>
             <property name="arrayInitIndent" value="2"/>
         </module>
-        <module name="AbbreviationAsWordInName">
+        -->
+        <!--
+         <module name="AbbreviationAsWordInName">
             <property name="allowedAbbreviationLength" value="1"/>
             <property name="ignoreFinal" value="false"/>
         </module>
+        -->
 
         <module name="VariableDeclarationUsageDistance"/>
         <!-- <module name="CustomImportOrder">

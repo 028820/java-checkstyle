@@ -26,7 +26,7 @@ then
   exit -1;
 fi
 
-javafiles=`git diff --cached --name-only |grep '\.java'`
+javafiles=`git diff --cached --name-only |grep '\.java'|grep -v 'Test\.java'`
 #echo $javafiles
 
 if [ -f $CONFIG_ERROR_FILE ]
