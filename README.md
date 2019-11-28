@@ -42,8 +42,9 @@ Render checkstyle_report.xml by XSLT.
 
 
 #### Safari Requires
-1. Develop -> Disable Local File Restrictions (MUST CHECK)
-2. Make sure the "~/Documents/java-checkstyle/checkstyle_report.xml" Open With Safari (Default), it's for convenience. git-hook will be auto-open the report if your code with checkstyle problem
+1. Safari -> Preferences -> Advanced -> Show Develop menu in menu bar (MUST CHECK)
+2. Develop -> Disable Local File Restrictions (MUST CHECK)
+3. Make sure the "~/Documents/java-checkstyle/checkstyle_report.xml" Open With Safari (Default), it's for convenience. git-hook will be auto-open the report if your code with checkstyle problem
 
 #### Windows Depend On Python 2.7 or later 
 
